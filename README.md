@@ -42,6 +42,7 @@ npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf<br>
 <img width="876" alt="스크린샷 2021-12-24 오후 7 43 52" src="https://user-images.githubusercontent.com/86910922/147346041-29545e2f-c380-46b2-a430-49cf61c935aa.png">
 
 세세한 설명은 주석에 입력하였다.
+엔트리에 들어간 모듈에 옵션을 적용해주는게 모듈이라는 것 그리고 최종적으로 아웃풋으로 보내진다는 것이 순서이다.
 
 ### 실행
 이후 인덱스html을 만들고 설정이 필요한 부분 설정하고 실행시키면 된다.
