@@ -29,8 +29,9 @@ npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf<br>
 
 <img width="347" alt="스크린샷 2021-12-24 오후 7 32 09" src="https://user-images.githubusercontent.com/86910922/147345232-d3362249-7772-4ba4-8b34-5f9d36e2dee4.png"> 
 <span>하나하나 뜯어보면
-  name, version, description은 초기 생성했을 때 자동생성, main은 웹팩 설정 후 output에 따라서 만들어짐.<br>
-  스크립트 : 명령어가 들어간다. (webpack-cli를 설치한 이유
+  
+  스크립트 : 명령어가 들어간다. (webpack-cli를 설치한 이유) 
+  
   author, license : 임의로 넣으면 된다.
   
   디펜던시와 dev디펜던시로 나뉜다. (설치시  npm i -D ~~)
@@ -63,6 +64,7 @@ devServer: {
 를 추가해준다.
 여기서 스태틱은 실제경로, 데브미들웨어는 가상경로가 되겠다.
 설치한 라이브러리는 임포트 후에 플러그인즈에 장착해주면 된다.
++ options 내부에 있는 plugins: 에도 react-refresh/babel을 추가해주어야 한다.
 
 
 ### 실행
