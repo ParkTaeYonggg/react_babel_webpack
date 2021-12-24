@@ -27,7 +27,7 @@ npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf<br>
 
 이제 기본 설치는 끝났고 pacakage.json 파일을 열어서 변경하였다.
 
-<img width="347" alt="스크린샷 2021-12-24 오후 7 32 09" src="https://user-images.githubusercontent.com/86910922/147345232-d3362249-7772-4ba4-8b34-5f9d36e2dee4.png"> <div style="float:left">하나하나 뜯어보면</div>
+<img width="347" alt="스크린샷 2021-12-24 오후 7 32 09" src="https://user-images.githubusercontent.com/86910922/147345232-d3362249-7772-4ba4-8b34-5f9d36e2dee4.png"> <div float="left">하나하나 뜯어보면</div>
 
 
 
