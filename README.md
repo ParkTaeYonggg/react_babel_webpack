@@ -44,5 +44,12 @@ npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf<br>
 세세한 설명은 주석에 입력하였다.
 엔트리에 들어간 모듈에 옵션을 적용해주는게 모듈이라는 것 그리고 최종적으로 아웃풋으로 보내진다는 것이 순서이다.
 
+### 브라우저 설정
+
+<img width="316" alt="스크린샷 2021-12-24 오후 8 23 17" src="https://user-images.githubusercontent.com/86910922/147348774-24b55587-09cf-4661-b181-6bd0c2dfc99a.png">
+
+브라우저 범위가 넓으면 바벨 일이 많아지기 때문에 위처럼 설정하였다. 소스는 깃허브/브라우저스리스트를 참고하였다.
+
+
 ### 실행
 이후 인덱스html을 만들고 설정이 필요한 부분 설정하고 실행시키면 된다.
