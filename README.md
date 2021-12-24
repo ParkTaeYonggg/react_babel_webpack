@@ -14,11 +14,12 @@ npm i webpack webpack-cli html-webpack-plugin webpack-dev-server
 
 
 이렇게 웹팩 설치는 끝났다. 이제 바벨 차례이다.
+
 npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf
 --> 순서대로
 1. 웹팩이 바벨을 다룰 수 있게 만들어준다.
 2. 최종적으로 컴파일을 해주는 역할을 한다.
 3. 컴파일할 타겟을 잡아준다.
 4. 웹팩과 리액트가 상호작용할 수 있도록 만들어준다.
-5. rimraf는 윈도우와 맥에서 동일한 명령어를 가지고 삭제요청할 수 있는 기능 때문에 넣었다.
+5. rimraf는 윈도우와 맥에서 동일한 명령어를 가지고 폴더 삭제요청할 수 있는 기능 때문에 넣었다.
 
