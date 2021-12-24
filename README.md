@@ -41,5 +41,7 @@ npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf<br>
 이후 webpack.config.js 파일을 만들었다.
 <img width="876" alt="스크린샷 2021-12-24 오후 7 43 52" src="https://user-images.githubusercontent.com/86910922/147346041-29545e2f-c380-46b2-a430-49cf61c935aa.png">
 
+세세한 설명은 주석에 입력하였다.
 
+### 실행
 이후 인덱스html을 만들고 설정이 필요한 부분 설정하고 실행시키면 된다.
