@@ -14,7 +14,7 @@ npm i webpack webpack-cli html-webpack-plugin webpack-dev-server<br>
 1. 웹팩 라이브러리를 설치한다. 
 2. 웹팩을 명령어로 접근하기 위한 라이브러리를 설치한다. ( 터미널에서 웹팩을 실행이 가능하도록 해주는 기능 )
 3. 웹팩이랑 에치티엠엘이 상호작용 할 수 있도록 만들어주는 플러그인을 설치한다. 
-4. 웹팩이 로컬(서버)에 접근할 수 있도록 만들어주는 라이브러리를 설치한다.
+4. 웹팩이 로컬(서버)에 접근할 수 있도록 만들어주는 라이브러리를 설치한다. -> 개발용서버
 ### 바벨설치
 이렇게 웹팩 설치는 끝났다. 이제 바벨 차례이다.<br>
 npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf<br>
@@ -49,6 +49,20 @@ npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf<br>
 <img width="316" alt="스크린샷 2021-12-24 오후 8 23 17" src="https://user-images.githubusercontent.com/86910922/147348774-24b55587-09cf-4661-b181-6bd0c2dfc99a.png">
 
 브라우저 범위가 넓으면 바벨 일이 많아지기 때문에 위처럼 설정하였다. 소스는 깃허브/브라우저스리스트를 참고하였다.
+
+
+### 핫리로드
+
+npm i react-refresh @pmmmwh/react-refresh-webpack-plugin -D으로 설치해준다.
+webpack.confing.js에
+devServer: {
+        devMiddleware: { publicPath: "./dist" },
+        static: {directory: path.resolve(__dirname, "src")},
+        hot: true,
+    }
+를 추가해준다.
+여기서 스태틱은 실제경로, 데브미들웨어는 가상경로가 되겠다.
+설치한 라이브러리는 임포트 후에 플러그인즈에 장착해주면 된다.
 
 
 ### 실행
