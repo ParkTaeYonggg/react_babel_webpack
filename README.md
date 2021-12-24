@@ -27,8 +27,14 @@ npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf<br>
 
 이제 기본 설치는 끝났고 pacakage.json 파일을 열어서 변경하였다.
 
-<img width="347" alt="스크린샷 2021-12-24 오후 7 32 09" src="https://user-images.githubusercontent.com/86910922/147345232-d3362249-7772-4ba4-8b34-5f9d36e2dee4.png"> <span>하나하나 뜯어보면
-name, version, description은 초기 생성했을 때 자동생성, main은 웹팩 설정 후 output에 따라서 만들어짐.
+<img width="347" alt="스크린샷 2021-12-24 오후 7 32 09" src="https://user-images.githubusercontent.com/86910922/147345232-d3362249-7772-4ba4-8b34-5f9d36e2dee4.png"> 
+<span>하나하나 뜯어보면
+  name, version, description은 초기 생성했을 때 자동생성, main은 웹팩 설정 후 output에 따라서 만들어짐.<br>
+  스크립트 : 명령어가 들어간다. (webpack-cli를 설치한 이유
+  author, license : 임의로 넣으면 된다.
+  
+  디펜던시와 dev디펜던시로 나뉜다. (설치시  npm i -D ~~)
+  - 특별히 다른 건 dev디펜던시는 개발시에만 사용하겠다는 의미이다.
 </span>
 
 
