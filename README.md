@@ -30,3 +30,16 @@ npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf<br>
 
 사진에 보이는 스크립트s 영역은 실행명령어다. npm start로 사용하는 "start" : "webpack-dev-server --mode development"는 개발모드로 실행시키겠다는 뜻이다.
 
+이후 webpack.config.js 파일을 만들어
+1. Require('path')로 절대경로를 설정한다.
+2. Require('html-webpack-plugin') 을 가져와준다.
+3. module.export = ({
+4.  entry: {js/app: ['./src/app.jsx'] 설정
+5.  --> 앱에서 통합이 이루어짐.
+6.  output: { path.resolve로 __dirname,"dist/" 설정
+7.  --> 최종적으로 결과물을 디스트 파일에 저장함.
+8.  module : js와 jsx파일은 바벨을 써서 사용하게 해준다.
+9.  plugin : 번들파일로 만들어진 app을 index.html에 담아서 dist에 저장해준다.
+10. })
+
+이후 인덱스html을 만들고 설정이 필요한 부분 설정하고 실행시키면 된다.
