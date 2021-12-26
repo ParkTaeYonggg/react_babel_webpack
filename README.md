@@ -38,6 +38,11 @@
 
 노드를 설치하면 폴더의 경로를 잡아주는 path를 require할 수 있게 된다. 하나 선언해준다.
 
+<img width="281" alt="스크린샷 2021-12-26 오후 9 13 01" src="https://user-images.githubusercontent.com/86910922/147407658-b6dad008-4bc2-4903-bcd0-525413ca6648.png">
+
+모듈을 필요한 곳에 던져줄 것이다.
+모드는 개발단계이니 development로 설정해준다. -> 실제 배포시 production으로 변경해주면 된다.
+
 
 ### 패키지설정
 이제 기본 설치는 끝났고 pacakage.json 파일을 열어서 변경하였다.
