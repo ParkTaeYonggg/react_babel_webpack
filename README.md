@@ -15,15 +15,17 @@
 <img width="225" alt="스크린샷 2021-12-26 오후 8 51 42" src="https://user-images.githubusercontent.com/86910922/147407138-0856c218-6b7e-482e-94ea-8db58737df4c.png"><img width="246" alt="스크린샷 2021-12-26 오후 8 51 34" src="https://user-images.githubusercontent.com/86910922/147407140-c8ce2e57-5585-403e-8232-10c0c7505037.png">
 
 ### 웹팩 설치
-npm i webpack webpack-cli html-webpack-plugin webpack-dev-server<br>
---> 순서대로 
-1. 웹팩 라이브러리를 설치한다. 
-2. 웹팩을 명령어로 접근하기 위한 라이브러리를 설치한다. ( 터미널에서 웹팩을 실행이 가능하도록 해주는 기능 )
-3. 웹팩이랑 에치티엠엘이 상호작용 할 수 있도록 만들어주는 플러그인을 설치한다. 
-4. 웹팩이 로컬(서버)에 접근할 수 있도록 만들어주는 라이브러리를 설치한다. -> 개발용서버
+명령어 : npm i webpack webpack-cli html-webpack-plugin webpack-dev-server clean-webpack-plugin @pmmmwh/react-refresh-webpack-plugin react-refresh<br>
+
+<img width="470" alt="스크린샷 2021-12-26 오후 8 55 36" src="https://user-images.githubusercontent.com/86910922/147407287-8e136b6b-a5ad-49a2-a5d4-473b4bad705f.png">
+
+
+--> 웹팩 라이브러리, 웹팩을 명령어로 접근할 수 있도록 만들어주는 cli, 로컬서버에서 활동할 수 있도록 만들어주는 devSever, html에 적용시켜서 새로운 파일을 만들어주는 html플러그인, 최신꺼 제외하고 이전 기록들은 삭제해주는 clean플러그인, 리액트 설정에 변경사항이 있을 시 자동수정 및 리로드를 해주는 핫로더를 설치해준다.
+
+
 ### 바벨설치
 이렇게 웹팩 설치는 끝났다. 이제 바벨 차례이다.<br>
-npm i babel-loader @babel/core @babel/preset-env @babel/preset-react rimraf<br>
+npm i babel-loader @babel/core @babel/preset-env @babel/preset-react <br>
 --> 순서대로
 1. 웹팩이 바벨을 다룰 수 있게 만들어준다.
 2. 최종적으로 컴파일을 해주는 역할을 한다.
