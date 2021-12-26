@@ -25,13 +25,14 @@
 
 ### 바벨설치
 이렇게 웹팩 설치는 끝났다. 이제 바벨 차례이다.<br>
-npm i babel-loader @babel/core @babel/preset-env @babel/preset-react <br>
---> 순서대로
-1. 웹팩이 바벨을 다룰 수 있게 만들어준다.
-2. 최종적으로 컴파일을 해주는 역할을 한다.
-3. 컴파일할 타겟을 잡아준다.
-4. 웹팩과 리액트가 상호작용할 수 있도록 만들어준다.
-5. rimraf는 윈도우와 맥에서 동일한 명령어를 가지고 폴더 삭제요청할 수 있는 기능 때문에 넣었다.
+
+명령어 : npm i babel-loader @babel/core @babel/preset-env @babel/preset-react css-loader style-loader file-loader <br>
+
+<img width="365" alt="스크린샷 2021-12-26 오후 9 03 00" src="https://user-images.githubusercontent.com/86910922/147407433-708ba844-a289-4024-8692-72e025810d6a.png">
+
+--> 웹팩이 바벨을 설정할 수 있도록 만들어주는 바벨로더와 코어, 바벨이 브라우저 등의 타겟을 잡을 수 있도록 도와주는 env, 리액트와 호환을 담당해주는 preset-react, css를 모듈에 적용시켜주는 것을 도와주는 css로더 + 실제 스타일에 입히는 걸 도와주는 style로더, 이미지 등을 불러올 수 있게 해주는 file-loader를 설치해준다.
+
+
 ### 패키지설정
 이제 기본 설치는 끝났고 pacakage.json 파일을 열어서 변경하였다.
 
@@ -58,22 +59,6 @@ npm i babel-loader @babel/core @babel/preset-env @babel/preset-react <br>
 <img width="316" alt="스크린샷 2021-12-24 오후 8 23 17" src="https://user-images.githubusercontent.com/86910922/147348774-24b55587-09cf-4661-b181-6bd0c2dfc99a.png">
 
 브라우저 범위가 넓으면 바벨 일이 많아지기 때문에 위처럼 설정하였다. 소스는 깃허브/브라우저스리스트를 참고하였다.
-
-
-### 핫리로드
-
-npm i react-refresh @pmmmwh/react-refresh-webpack-plugin -D으로 설치해준다.
-webpack.confing.js에
-devServer: {
-        devMiddleware: { publicPath: "./dist" },
-        static: {directory: path.resolve(__dirname, "src")},
-        hot: true,
-    }
-를 추가해준다.
-여기서 스태틱은 실제경로, 데브미들웨어는 가상경로가 되겠다.
-설치한 라이브러리는 임포트 후에 플러그인즈에 장착해주면 된다.
-+ options 내부에 있는 plugins: 에도 react-refresh/babel을 추가해주어야 한다.
-
 
 ### 실행
 이후 인덱스html을 만들고 설정이 필요한 부분 설정하고 실행시키면 된다.
