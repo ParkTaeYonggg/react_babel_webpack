@@ -32,6 +32,12 @@
 
 --> 웹팩이 바벨을 설정할 수 있도록 만들어주는 바벨로더와 코어, 바벨이 브라우저 등의 타겟을 잡을 수 있도록 도와주는 env, 리액트와 호환을 담당해주는 preset-react, css를 모듈에 적용시켜주는 것을 도와주는 css로더 + 실제 스타일에 입히는 걸 도와주는 style로더, 이미지 등을 불러올 수 있게 해주는 file-loader를 설치해준다.
 
+### webpack.config.js 설정
+
+<img width="326" alt="스크린샷 2021-12-26 오후 9 09 46" src="https://user-images.githubusercontent.com/86910922/147407621-49dd46a1-6a82-47af-85f5-95feeb87667d.png">
+
+노드를 설치하면 폴더의 경로를 잡아주는 path를 require할 수 있게 된다. 하나 선언해준다.
+
 
 ### 패키지설정
 이제 기본 설치는 끝났고 pacakage.json 파일을 열어서 변경하였다.
