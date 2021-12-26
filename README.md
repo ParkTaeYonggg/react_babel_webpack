@@ -36,27 +36,35 @@
 
 <img width="326" alt="스크린샷 2021-12-26 오후 9 09 46" src="https://user-images.githubusercontent.com/86910922/147407621-49dd46a1-6a82-47af-85f5-95feeb87667d.png">
 
-노드를 설치하면 폴더의 경로를 잡아주는 path를 require할 수 있게 된다. 하나 선언해준다.
+-> 노드를 설치하면 폴더의 경로를 잡아주는 path를 require할 수 있게 된다. 하나 선언해준다.
 
 <img width="281" alt="스크린샷 2021-12-26 오후 9 13 01" src="https://user-images.githubusercontent.com/86910922/147407658-b6dad008-4bc2-4903-bcd0-525413ca6648.png">
 
-모듈을 필요한 곳에 던져줄 것이다.
+-> 모듈을 필요한 곳에 던져줄 것이다.
 모드는 개발단계이니 development로 설정해준다. -> 실제 배포시 production으로 변경해주면 된다.
 
+<img width="329" alt="스크린샷 2021-12-26 오후 9 16 59" src="https://user-images.githubusercontent.com/86910922/147407771-78e78dca-5e40-4998-8d16-b90e49f973c3.png">
 
-### 패키지설정
-이제 기본 설치는 끝났고 pacakage.json 파일을 열어서 변경하였다.
+-> 리졸브로 확장자들을 붙잡아줄 수 있다. -> 여기서 설치하면 실제 임포트시 편리함.
 
-<img width="347" alt="스크린샷 2021-12-24 오후 7 32 09" src="https://user-images.githubusercontent.com/86910922/147345232-d3362249-7772-4ba4-8b34-5f9d36e2dee4.png"> 
-<span>하나하나 뜯어보면
-  
-  스크립트 : 명령어가 들어간다. (webpack-cli를 설치한 이유) 
-  
-  author, license : 임의로 넣으면 된다.
-  
-  디펜던시와 dev디펜던시로 나뉜다. (설치시  npm i -D ~~)
-  - 특별히 다른 건 dev디펜던시는 개발시에만 사용하겠다는 의미이다.
-</span>
+<img width="278" alt="스크린샷 2021-12-26 오후 9 19 00" src="https://user-images.githubusercontent.com/86910922/147407802-3542ab87-0425-498c-9e1d-eb8b1cd5e24e.png"><img width="257" alt="스크린샷 2021-12-26 오후 9 19 18" src="https://user-images.githubusercontent.com/86910922/147407806-29608b24-8d04-4a1a-8f48-0d7e6ad21191.png">
+
+-> 가장 중요한 요소중 하나인 entry를 설정해준다. -> 모듈이 하나로 모이는 지점이다. 인덱스(원하는 이름 아무거나 적어도 되고 난 index로 사용했다.) 파일을 하나 만들고 경로로 지정해준다.
+
+<img width="549" alt="스크린샷 2021-12-26 오후 9 25 48" src="https://user-images.githubusercontent.com/86910922/147407962-d25193f2-545f-4819-b1a6-2bc81f082897.png">
+
+-> entry의 결과물에 추가옵션을 붙이는 과정이라고 생각하면 된다. css를 읽고 적용시켜주는 css로더, 이미지나 gif등을 적용시켜주는 file로더, js혹은jsx 적용 로더와 로더에 맞는 옵션즈들을 적용시킨 결과물이다.
+
+<img width="750" alt="스크린샷 2021-12-26 오후 9 35 57" src="https://user-images.githubusercontent.com/86910922/147408229-faf8344d-0da6-4b20-8f87-81f032d6ff28.png"><img width="515" alt="스크린샷 2021-12-26 오후 9 36 05" src="https://user-images.githubusercontent.com/86910922/147408232-99667f9a-d51a-4620-b2a7-2e4b2a2ce15f.png">
+
+-> 이제 웹팩 플러그인들을 장착시키는 중이다. -> 조립된 html의 견본을 따서 페이지로 출력시켜주고 핫로더는 그걸 또 더 편리하게 자동화시켜준다. 그리고 클리너가 이전의 기록들을 제거해준다.
+
+<img width="631" alt="스크린샷 2021-12-26 오후 9 42 14" src="https://user-images.githubusercontent.com/86910922/147408406-9d717dc4-9ca9-4f6d-ad80-6f0bb1d60843.png">
+
+-> 노드로 잡아놓은 __dirname 현재 폴더에서 , 내가 임의로 지정한 폴더 위치를 지정해주고 파일네임은 entry key값이 들어갈 수 있도록 \[name] 사용해주도록 한다. 퍼블릭패스는 가상 경로가 되겠고 패스.조인이 실제경로가 될 것이다.
+
+
+
 ### 웹팩 설정
 
 이후 webpack.config.js 파일을 만들었다.
