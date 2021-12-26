@@ -3,11 +3,17 @@
 우선 설치를 해야할 것들이 많다.
 
 ### package.json 생성
-npm init -y<br>
---> 이것은 원하는 폴더에 모듈들을 만들어준다.
+명령어 : npm init -y 
+패키지.js파일을 만들어준다.
+
+<img width="309" alt="스크린샷 2021-12-26 오후 8 50 24" src="https://user-images.githubusercontent.com/86910922/147407086-cd426f55-1c87-4284-b5f3-ec8aaf88fc8a.png">
+
 ### react react-dom 라이브러리 설치
-npm i --save react react-dom
---> 이것은 리액트 개발에 필수적인 라이브러리다.
+명령어 : npm i --save react react-dom
+리액트를 실행하는데 필수적인 라이브러리를 설치한다.
+
+<img width="225" alt="스크린샷 2021-12-26 오후 8 51 42" src="https://user-images.githubusercontent.com/86910922/147407138-0856c218-6b7e-482e-94ea-8db58737df4c.png"><img width="246" alt="스크린샷 2021-12-26 오후 8 51 34" src="https://user-images.githubusercontent.com/86910922/147407140-c8ce2e57-5585-403e-8232-10c0c7505037.png">
+
 ### 웹팩 설치
 npm i webpack webpack-cli html-webpack-plugin webpack-dev-server<br>
 --> 순서대로 
