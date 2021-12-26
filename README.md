@@ -71,19 +71,10 @@
 
 ### 에러
 
-<img width="496" alt="스크린샷 2021-12-26 오후 9 53 07" src="https://user-images.githubusercontent.com/86910922/147408696-7e5689d0-a176-476a-8ada-f67de7ff3a63.png">
+<img width="390" alt="스크린샷 2021-12-26 오후 10 14 05" src="https://user-images.githubusercontent.com/86910922/147409399-25f729dd-80b5-487a-abb1-c89f0dea8f73.png"><img width="387" alt="스크린샷 2021-12-26 오후 10 13 54" src="https://user-images.githubusercontent.com/86910922/147409401-ef78c720-8157-416b-9f21-e2a111763f68.png">
 
 -> 위에서 로더 2개를 사용할 때 loader 사용 했더니 에러가 났다. use로 바꾸어서 여러 로더들을 사용할 수 있도록 변경해주었다.
-
-
-
-### 웹팩 설정
-
-이후 webpack.config.js 파일을 만들었다.
-<img width="876" alt="스크린샷 2021-12-24 오후 7 43 52" src="https://user-images.githubusercontent.com/86910922/147346041-29545e2f-c380-46b2-a430-49cf61c935aa.png">
-
-세세한 설명은 주석에 입력하였다.
-엔트리에 들어간 모듈에 옵션을 적용해주는게 모듈이라는 것 그리고 최종적으로 아웃풋으로 보내진다는 것이 순서이다.
+-> html 폴더 경로 설정을 잘못해서 에러가 났었다. 주의하자.
 
 ### 브라우저 설정
 
