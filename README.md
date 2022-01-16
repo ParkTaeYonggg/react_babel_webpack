@@ -96,3 +96,21 @@ cors에러를 막기 위해 프록스를 설정해주었다. "/api/*" 부분과 
 
 ### 실행
 이후 인덱스html을 만들고 설정이 필요한 부분 설정하고 실행시키면 된다.
+-> html 폴더 경로 설정을 잘못해서 에러가 났었다. 주의하자.
+
+### 타입스크립트 사용시
+설치 : npm i -D typescript @babel/preset-tyscript ts-loader
+설치를 하고 나서 
+
+<img width="286" alt="스크린샷 2022-01-16 오후 7 34 45" src="https://user-images.githubusercontent.com/86910922/149656603-a9c7fe3c-a1b6-4efc-b3c1-47af9a41ee00.png">
+
+이것을 추가해주면 이제 에러가 날 것이다. tsconfig.json이 없다고 말이다.
+
+<img width="481" alt="스크린샷 2022-01-16 오후 7 35 00" src="https://user-images.githubusercontent.com/86910922/149656616-26cd957e-54a4-4b2a-ac50-28ea1f56da34.png">
+
+위와 같은 이름으로 파일을 하나 추가해준다. -> 공식 홈페이지 가면 설정하는 방법이 다 나온다.
+-----> resolve에 .tsx도 하나 추가해주면 편리하게 쓸 수 있다.
+
+
+
+
