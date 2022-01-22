@@ -112,5 +112,12 @@ cors에러를 막기 위해 프록스를 설정해주었다. "/api/*" 부분과 
 -----> resolve에 .tsx도 하나 추가해주면 편리하게 쓸 수 있다.
 
 
+### async/await 사용시
+--> npm i -D @babel/plugin-transform-runtime babel-plugin-transform-regenerator 
+
+설치 후 플러그인에 장착해주기.
+<img width="484" alt="스크린샷 2022-01-22 오후 6 57 53" src="https://user-images.githubusercontent.com/86910922/150633962-b4ed9f02-c315-4f00-8553-202f2225efe2.png">
+
+
 
 
